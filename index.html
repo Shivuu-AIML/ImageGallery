@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Media Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <h1>🖼️ My Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn all" data-filter="all">All</button>
+    <button class="filter-btn person" data-filter="person">Persons</button>
+    <button class="filter-btn food" data-filter="food">Food</button>
+    <button class="filter-btn place" data-filter="place">Places</button>
+    <button class="filter-btn animal" data-filter="animal">Animals</button>
+    <button class="filter-btn video" data-filter="video">Videos</button>
+    <button class="filter-btn screenshot" data-filter="screenshot">Screenshots</button>
+  </div>
+  <p id="mediaCount" style="margin: 10px 0; font-weight: 500; color: #555;"></p>
+
+
+  <!-- Media Grid -->
+  <div class="gallery">
+
+    <!-- Person Images -->
+    <div class="media-item" data-category="person"><img src="images/person1.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person2.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person3.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person4.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person5.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person6.jpg" alt="Person" /></div>
+    <div class="media-item" data-category="person"><img src="images/person7.jpg" alt="Person" /></div>
+
+    <!-- Food Images -->
+    <div class="media-item" data-category="food"><img src="images/food1.jpg" alt="Food" /></div>
+    <div class="media-item" data-category="food"><img src="images/food2.jpg" alt="Food" /></div>
+    <div class="media-item" data-category="food"><img src="images/food3.jpg" alt="Food" /></div>
+    <div class="media-item" data-category="food"><img src="images/food4.jpg" alt="Food" /></div>
+    <div class="media-item" data-category="food"><img src="images/food5.jpg" alt="Food" /></div>
+
+    <!-- Place Images -->
+    <div class="media-item" data-category="place"><img src="images/place1.jpg" alt="Place" /></div>
+    <div class="media-item" data-category="place"><img src="images/place2.jpg" alt="Place" /></div>
+    <div class="media-item" data-category="place"><img src="images/place3.jpg" alt="Place" /></div>
+    <div class="media-item" data-category="place"><img src="images/place4.jpg" alt="Place" /></div>
+    <div class="media-item" data-category="place"><img src="images/place5.jpg" alt="Place" /></div>
+
+    <!-- Screenshot Images -->
+    <div class="media-item" data-category="screenshot"><img src="images/SS1.jpg" alt="Screenshot" /></div>
+    <div class="media-item" data-category="screenshot"><img src="images/SS2.jpg" alt="Screenshot" /></div>
+    <div class="media-item" data-category="screenshot"><img src="images/SS3.jpg" alt="Screenshot" /></div>
+
+    <!-- Videos -->
+    <div class="media-item" data-category="video"><video src="videos/video1.mp4" controls muted></video></div>
+    <div class="media-item" data-category="video"><video src="videos/video2.mp4" controls muted></video></div>
+    <div class="media-item" data-category="video"><video src="videos/video3.mp4" controls muted></video></div>
+
+  </div>
+
+  <!-- Modal for zoom -->
+  <div class="modal" id="modal">
+    <span id="closeBtn">&times;</span>
+    <div id="modalContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
